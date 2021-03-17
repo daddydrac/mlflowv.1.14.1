@@ -1,5 +1,5 @@
 FROM continuumio/miniconda3
-nstall mlflow[extra
+
 
 RUN pip install PyMySQL==0.9.3 && \   
     pip install psycopg2-binary==2.8.5 && \
