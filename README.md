@@ -21,7 +21,7 @@ Pull the image with the default tag:
 
 ``` docker pull jhoeller/mlflow-v.1.14.1:default ```
 
-Run the image, make directory for model store & handle permissions
+Run the image, make directory for model store & handle permissions. Auto backup of models via s3 with --default-artifact-root flag. 
 ```
     mkdir -p /mlflow/artifacts
     
