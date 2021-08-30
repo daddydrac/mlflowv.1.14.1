@@ -19,7 +19,7 @@ Store, annotate, discover, and manage models in a central repository
 
 Pull the image with the default tag:
 
-``` docker pull jhoeller/mlflow-v.1.14.1:default ```
+
 
 Run the image, make directory for model store & handle permissions
 ```
