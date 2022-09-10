@@ -1,11 +1,5 @@
-FROM continuumio/miniconda3
+FROM continuumio/miniconda3:latest
 
-RUN pip install boto3
-RUN pip install numpy
-RUN pip install PyMySQL && \   
-    pip install psycopg2-binary && \
-    pip install werkzeug==2.0.3 && \
-    pip install mlflow && \
-    pip install mlflow[extras]
+RUN pip install werkzeug==2.0.3 psycopg2-binary mlflow boto3 pymysql mlflow[extras]
 
-ENTRYPOINT ["mlflow", "server"]
+CMD mlflow server --host 0.0.0.0
